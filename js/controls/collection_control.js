@@ -76,6 +76,7 @@ export var CollectionControl = L.Control.extend({
         this._daxPath = new DaxPath(this._map);
         this._areas = new Areas(this._map);
         this._polyArea = new PolyArea(this._map);
+        this._position = new Position(this._position);
 
         this._currentDrawable = undefined;
         this._currentConverter = undefined;

@@ -131,6 +131,11 @@ export var CollectionControl = L.Control.extend({
             this._toggleCollectionMode(this._daxPath, "path_converter", e.target);
         });
 
+        // Position control
+        this._createControl('<img src="/css/images/lex-marker.png" alt="Position" title="Position" height="25" width="30">', container, function (e) {
+            this._toggleCollectionMode(this._daxPath, "path_converter", e.target);
+        });
+
         // Undo control
         this._createControl('<i class="fa fa-undo" aria-hidden="true"></i>', container, function(e) {
             if (this._currentDrawable !== undefined) {

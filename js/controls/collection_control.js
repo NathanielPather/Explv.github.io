@@ -134,7 +134,7 @@ export var CollectionControl = L.Control.extend({
 
         // Position control
         this._createControl('<img src="/css/images/lex-marker.png" alt="Position" title="Position" height="25" width="30">', container, function (e) {
-            this._toggleCollectionMode(this._daxPath, "path_converter", e.target);
+            this._toggleCollectionMode(this._position, "path_converter", e.target);
         });
 
         // Undo control
